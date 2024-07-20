@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+*{
+    margin: 0;/*для всех элементов*/
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    background: hsl(0, 0%, 0%);
+}
+
+a {
+    text-decoration: none; /*ссылки без подчеркивания*/
+}
+
+.container {
+    width: 1200px;/*ширина меньше экрана*/
+    margin: 0 auto;
+}
+
+.wrapper {
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(85,19,0,1) 100%);/*градиент основы*/
+    width: 100%;
+    overflow-x: hidden; /*скрыть все что за границами области*/
+}
+
+header {
+    padding: 50px 0;
+}
+
+header nav {
+    float: right; /*выравниание по правую сторону*/
+    width: 20%; /*отширины всей шапки*/
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /*расположение на всю ширину блока*/
+}
+
+header nav ul li { /*каждый элемент*/
+    display: inline-block; /*для добавления отступов должен быть блоком*/
+}
+
+header nav ul li a { /*текст ссылок белый*/
+    color: #fff;
+}
+
+.system-blok {
+    background: url('/img/Elite\ Dangerous\ Screenshot\ 2023.06.28\ -\ 21.27.16.91.png') no-repeat center center fixed; /*не повторяется по осям, выравнивание центр, эфект фиксации при скролинге страницы*/
+    background-size: cover; /*на ширину секции*/
+    padding: 30px 0;
+    
+    
+}
+.system-list {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    right: -550px;
+}
+.system-list h1 {
+    padding-bottom: 20px;
+    text-transform: uppercase; /*текст в верхнем регистре*/
+    font-size: 29px;
+    font-weight: 800;
+}
+
+.system label, .system a {
+    text-transform: uppercase; /*текст в верхнем регистре*/
+    font-size: 24px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.system-list .system .sys-text {
+    margin-bottom: 7px;
+    background: rgba(85, 18, 0, 0.775);
+    padding: 9px 17px;
+    border-radius: 5px;
+   
+}
+
+.hide {
+    display: none; 
+    margin-bottom: 5px;
+}
+
+.hide:checked + label + div {
+    display: block; 
+}
+
+.hide + label ~ div{
+    display: none;
+}
+
+/*footer*/
+
+footer > p {
+    text-align: center;
+}
